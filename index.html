@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Adriana Condoris — AI Engineer exploring machine learning, deep learning, and ideas worth building.">
+  <meta name="description" content="Adriana Condoris, AI Engineer exploring machine learning, deep learning, and ideas worth building.">
   <meta name="theme-color" content="#171925">
-  <title>Adriana Condoris — AI Engineer & Curious Mind</title>
+  <title>Adriana Condoris, AI Engineer & Curious Mind</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +53,6 @@
       <div class="constellation-wrap" aria-hidden="true">
         <div class="constellation-glow"></div>
         <canvas class="constellation" id="constellation" aria-label="Interactive network of connected points"></canvas>
-        <p class="constellation-note"><span>01 —</span> Always exploring</p>
       </div>
       <a class="scroll-cue" href="#about">Scroll to explore <span aria-hidden="true">↓</span></a>
     </section>
@@ -61,11 +60,11 @@
     <section id="about" class="section about-section">
       <div class="section-heading">
         <p class="eyebrow">A little about me</p>
-        <h2>Interested in how things work — and what we can make with them.</h2>
+        <h2>Interested in how things work and what we can make with them.</h2>
       </div>
       <div class="about-copy">
         <p>
-          I'm an AI Engineer who enjoys turning ideas into useful things. Alongside building AI-powered applications, I'm exploring data science and learning deep learning by implementing concepts from scratch.
+          I'm an AI Engineer who enjoys turning ideas into useful things. Alongside building AI powered applications, I'm exploring data science and learning deep learning by implementing concepts from scratch.
         </p>
         <p>
           This site is a mix of work I'm proud of, things I'm learning, and little experiments I make just because I'm curious.
@@ -99,7 +98,7 @@
           <div class="project-content">
             <p class="project-kicker">AI engineering · Product building</p>
             <h3>vEMPIRE</h3>
-            <p>An AI-powered Telegram bot for chatting, extracting insights from YouTube videos, and exploring audience comments.</p>
+            <p>An AI powered Telegram bot for chatting, extracting insights from YouTube videos, and exploring audience comments.</p>
             <ul class="tech-list"><li>Python</li><li>FastAPI</li><li>AWS</li><li>LLMs</li></ul>
             <!-- Add a project URL to turn this into a live project link when ready. -->
           </div>
@@ -143,7 +142,7 @@
         <div>
           <p class="project-kicker">Games · Side quests · Experiments</p>
           <h3>A space for things made out of curiosity.</h3>
-          <p>Add your game or hobby project here when you're ready — a screenshot, a short description, and a link are enough.</p>
+          <p>Add your game or hobby project here when you're ready, a screenshot, a short description, and a link are enough.</p>
         </div>
         <!-- Replace this comment with a project link when your game is published. -->
       </article>
@@ -158,29 +157,36 @@
         <p>I have a soft spot for cats, whether they're old friends or strangers I haven't met yet. I'm always happy to stop for a little cat time.</p>
       </div>
 
-      <div class="gallery">
-        <figure class="gallery-item gallery-item--tall">
+      <div class="gallery" role="region" aria-roledescription="carousel" aria-label="Cats" tabindex="0">
+        <div class="gallery-stage" id="cat-slides">
+        <figure class="gallery-item">
           <img src="images/cats/white_cat.jpg" alt="A white cat" width="1600" height="1200" loading="lazy">
         </figure>
-        <figure class="gallery-item gallery-item--wide">
+        <figure class="gallery-item" hidden>
           <img src="images/cats/princesse.jpg" alt="Princesse the cat" width="1600" height="1200" loading="lazy">
         </figure>
-        <figure class="gallery-item">
+        <figure class="gallery-item" hidden>
           <img src="images/cats/memette.jpg" alt="Memette the cat" width="1600" height="1200" loading="lazy">
         </figure>
-        <figure class="gallery-item">
-          <video src="images/cats/2_cats.mov" muted loop playsinline controls preload="metadata" aria-label="A video of two cats"></video>
+        <figure class="gallery-item" hidden>
+          <video src="images/cats/2_cats.mp4" muted loop playsinline controls preload="metadata" aria-label="A video of two cats"></video>
         </figure>
+        </div>
+        <div class="gallery-controls">
+          <button type="button" class="gallery-arrow" data-direction="-1" aria-label="Previous photo or video" aria-controls="cat-slides">←</button>
+          <span class="gallery-count" aria-live="polite" aria-atomic="true">1 / 4</span>
+          <button type="button" class="gallery-arrow" data-direction="1" aria-label="Next photo or video" aria-controls="cat-slides">→</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <a href="#home" class="logo">AC<span>.</span></a>
-    <p>Made with curiosity, in Romania.</p>
-    <a class="text-link" href="mailto:adriana@vempire.com">Say hello ↗</a>
+    <a class="text-link" href="#home">Back to top ↑</a>
   </footer>
 
   <script src="js/constellation.js" defer></script>
+  <script src="js/gallery.js" defer></script>
 </body>
 </html>
