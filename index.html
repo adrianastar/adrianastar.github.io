@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Adriana Condoris, AI Engineer exploring machine learning, deep learning, and ideas worth building.">
-  <meta name="theme-color" content="#171925">
+  <meta name="theme-color" content="#090b18">
   <title>Adriana Condoris, AI Engineer & Curious Mind</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,9 +52,8 @@
 
       <div class="constellation-wrap" aria-hidden="true">
         <div class="constellation-glow"></div>
-        <canvas class="constellation" id="constellation" aria-label="Interactive network of connected points"></canvas>
+        <canvas class="constellation" id="constellation" aria-label="A constellation of stars inspired by Orion"></canvas>
       </div>
-      <a class="scroll-cue" href="#about">Scroll to explore <span aria-hidden="true">↓</span></a>
     </section>
 
     <section id="about" class="section about-section">
@@ -137,15 +136,21 @@
         </div>
         <p>Small games, side projects, and experiments that start with “what if?”.</p>
       </div>
-      <article class="playground-card">
-        <div class="playground-symbol" aria-hidden="true"><span>✳</span><span>↗</span><span>◌</span></div>
+      <article class="playground-card game-preview-card">
+        <a class="game-preview" href="game/index.html" data-play-game aria-label="Play Le Petit Chat"><img src="game/assets/environments/observatory-preview.svg" alt="An astronaut and a black cat beside a blue observatory on a distant moon" width="960" height="640" loading="lazy"><span class="preview-label">✦ First chapter playable</span></a>
         <div>
-          <p class="project-kicker">Games · Side quests · Experiments</p>
-          <h3>A space for things made out of curiosity.</h3>
-          <p>Add your game or hobby project here when you're ready, a screenshot, a short description, and a link are enough.</p>
+          <p class="project-kicker">Exploration · Cosmic cats</p>
+          <h3 lang="fr">Le Petit Chat</h3>
+          <p>A small adventure among the stars. Explore a mysterious moon, earn a stubborn cat’s trust, and find something to take on your next journey.</p>
+          <a class="button button-primary" href="game/index.html" data-play-game>Play Le Petit Chat <span aria-hidden="true">↗</span></a>
+          <p class="game-preview-note">Free browser game · Keyboard & touch · In development</p>
         </div>
-        <!-- Replace this comment with a project link when your game is published. -->
       </article>
+      <div class="embedded-game" id="embedded-game" hidden>
+        <div class="embedded-toolbar"><span lang="fr">Le Petit Chat</span><div><a href="game/index.html">Open full page ↗</a><button id="close-game" type="button">Close game ×</button></div></div>
+        <p class="embedded-hint">Click the scene to move with the arrow keys. Touch controls are below the scene.</p>
+        <div id="game-frame-slot"></div>
+      </div>
     </section>
 
     <section id="cats" class="section cats-section">
@@ -188,5 +193,6 @@
 
   <script src="js/constellation.js" defer></script>
   <script src="js/gallery.js" defer></script>
+  <script src="js/playground.js" defer></script>
 </body>
 </html>

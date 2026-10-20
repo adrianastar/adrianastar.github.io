@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="An astronaut explores a blue moon beside an abandoned observatory and a black cat.">
+            <style>[hidden]{display:none} #astronaut-body{animation:float 3s ease-in-out infinite} #tail{transform-origin:15px 20px;animation:tail 2s ease-in-out infinite alternate}@keyframes float{50%{transform:translateY(-5px)}}@keyframes tail{to{transform:rotate(-16deg)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}} .portal-beam,.portal-arrow{display:none}</style><defs>
+              <radialGradient id="sky"><stop stop-color="#17365b"/><stop offset="1" stop-color="#080e20"/></radialGradient>
+              <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#294661"/><stop offset="1" stop-color="#132438"/></linearGradient>
+              <linearGradient id="dome" x2=".7" y2="1"><stop stop-color="#4f7c96"/><stop offset="1" stop-color="#182e47"/></linearGradient>
+              <radialGradient id="visor" cx=".3" cy=".2"><stop stop-color="#89e7ed"/><stop offset=".5" stop-color="#245a83"/><stop offset="1" stop-color="#142b4e"/></radialGradient>
+              <radialGradient id="aura"><stop stop-color="#65d9ee" stop-opacity=".2"/><stop offset="1" stop-color="#65d9ee" stop-opacity="0"/></radialGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+            </defs>
+            <rect width="960" height="640" fill="url(#sky)"/>
+            <g id="stars" fill="#d2edff"></g>
+            <g opacity=".55"><circle cx="790" cy="100" r="44" fill="#507a96"/><ellipse cx="790" cy="100" rx="77" ry="12" fill="none" stroke="#82b7c9" stroke-width="3" transform="rotate(-24 790 100)"/></g>
+            <path d="M-40 315 Q130 205 310 271 Q490 190 650 264 Q850 218 1000 326 L1000 680H-40Z" fill="url(#ground)"/>
+            <path d="M80 640 Q240 500 350 460T560 340" fill="none" stroke="#7494a7" stroke-opacity=".1" stroke-width="75"/>
+            <g fill="#112236" opacity=".5"><ellipse cx="177" cy="382" rx="58" ry="14"/><ellipse cx="805" cy="480" rx="58" ry="19"/><ellipse cx="327" cy="567" rx="29" ry="8"/></g>
+            <g stroke="#39586d" fill="#233b51"><path d="m122 371 20-38 42-8 30 39-13 16h-67Z"/><path d="m763 470 17-29 40-8 26 23-7 24h-61Z"/><path d="m301 561 10-17 23 3 14 17-13 5Z"/></g>
+            <g id="observatory">
+              <ellipse cx="510" cy="355" rx="186" ry="31" fill="#071323" opacity=".5"/>
+              <path d="M354 273a146 146 0 0 1 292 0v63H354Z" fill="url(#dome)" stroke="#52778e" stroke-width="2"/>
+              <path d="M500 127Q424 187 425 273M500 127q76 60 75 146M355 273h290" fill="none" stroke="#80afc3" stroke-opacity=".3" stroke-width="2"/>
+              <path d="M485 130v128h31V130" fill="#091c32"/><path d="m497 153 17-38 66-13 7 19-63 20-12 30" fill="#436580" stroke="#7ea9bc" stroke-width="2"/>
+              <rect x="347" y="290" width="306" height="60" rx="12" fill="#1b334b" stroke="#42647a"/>
+              <path d="M476 350v-45a24 24 0 0 1 48 0v45" fill="#0c1d30" stroke="#5e9ba9"/>
+              <rect x="490" y="312" width="20" height="4" rx="2" fill="#82dfdf"/>
+              <g fill="#71b4ca" opacity=".5"><rect x="379" y="310" width="39" height="5" rx="2"/><rect x="581" y="310" width="39" height="5" rx="2"/></g>
+            </g>
+            <g fill="none" stroke="#6ac6d4" stroke-width="3"><path d="M88 492q-8-34 8-51m-8 34q-25-24-31-12m32 3q20-24 28-14M868 368q-9-37 7-48m-9 32q-20-20-27-10"/></g>
+            <g fill="#8ce5df"><ellipse cx="96" cy="440" rx="7" ry="12" transform="rotate(20 96 440)"/><ellipse cx="57" cy="463" rx="10" ry="5"/><ellipse cx="117" cy="452" rx="10" ry="5"/><circle cx="875" cy="320" r="6"/></g>
+            <circle cx="660" cy="386" r="82" fill="url(#aura)"/>
+            <g id="console"><path d="m620 393 14-35h77l14 35-8 19h-89Z" fill="#13283e" stroke="#587990" stroke-width="2"/><path d="m640 366-8 21h77l-7-21Z" fill="#295e73"/><g fill="#8ce5df"><rect x="643" y="372" width="25" height="3"/><circle cx="693" cy="379" r="4"/></g></g>
+            <g id="moon-key" transform="translate(220 510)"><circle r="31" fill="url(#aura)"/><g class="key-spark"><circle cy="-24" r="2" fill="#ffe4a2"/><path d="M-17-9h8m-4-4v8" stroke="#ffe4a2"/></g><g stroke="#e9cb80" stroke-width="5" fill="none" stroke-linecap="round"><circle cx="-5" cy="-2" r="7"/><path d="m1 3 15 15m-6-6-4 4m10 2-4 4"/></g></g>
+            <g id="food" hidden=""><ellipse cx="641" cy="445" rx="15" ry="5" fill="#162a3d"/><path d="M627 438h28l-4 8h-20Z" fill="#a7b7c5"/><ellipse cx="641" cy="438" rx="14" ry="4" fill="#bc865c"/></g>
+            <g id="cat" transform="translate(672 359)">
+              <ellipse cy="27" rx="27" ry="7" fill="#050c18" opacity=".5"/>
+              <path id="tail" d="M15 20q33 2 28-20" fill="none" stroke="#080f1a" stroke-width="9" stroke-linecap="round"/>
+              <ellipse cy="12" rx="20" ry="18" fill="#0b111e"/>
+              <path id="cat-ears" d="m-17-6-1-17 14 10m8 0 14-10-1 19" fill="#0b111e"/>
+              <ellipse cy="-4" rx="19" ry="15" fill="#0b111e"/>
+              <path d="m-9 9 9 5 8-5-3 13H-4Z" fill="#e2e8e8"/>
+              <path id="cat-eyes" d="m-12-5 8 2m8 0 8-2" stroke="#b9e39a" stroke-width="3"/>
+              <path d="m-2 1 4 0-2 3Z" fill="#bc8d9e"/>
+              <g stroke="#a7b5c9" stroke-width=".7"><path d="m-13 1-16-3m16 6-16 1m42-4 16-3m-16 6 16 1"/></g>
+              <path id="cat-paw" d="M-14 15-22 22" stroke="#101a29" stroke-width="8" stroke-linecap="round"/>
+              <g id="scratch-marks" hidden="" stroke="#ffd7c7" stroke-width="2"><path d="m-32 0-8 16m15-13-8 16m15-13-8 16"/></g>
+              <text id="cat-emote" y="-34" text-anchor="middle" fill="#a8e8f5" font-size="20"></text>
+            </g>
+            <g id="space-toy" hidden="" transform="translate(705 419)"><ellipse rx="10" ry="6" fill="#aaa8ca"/><path d="M9 0q18 10 22-3" stroke="#adcbd8" fill="none"/></g>
+            <g id="cat-hint" transform="translate(672 305)"><circle r="13" fill="#182c45" stroke="#79d1e7"/><text text-anchor="middle" y="5" fill="#ccf4ff" font-size="16">?</text></g>
+            <g id="portal" class="portal" transform="translate(872 536)" aria-label="Inactive teleport pad">
+              <ellipse cy="20" rx="47" ry="15" fill="#10243c" stroke="#4e6e89" stroke-width="3"/>
+              <ellipse class="portal-light" cy="15" rx="36" ry="10" fill="#344f68"/>
+              <g class="portal-beam"><ellipse cy="-12" rx="30" ry="48" fill="url(#aura)"/><path d="M-23 12v-45m23 45v-63m23 63v-45" stroke="#8cf4ef" stroke-width="2" stroke-dasharray="4 7"/></g>
+              <g class="portal-arrow" fill="#c6ffff"><path d="m-9-78 9 10 9-10h-6v-13h-6v13Z"/><text y="-104" text-anchor="middle" font-size="15">NEXT PLANET</text></g>
+            </g>
+            <g id="astronaut" transform="translate(320 470)">
+              <ellipse cy="34" rx="24" ry="7" fill="#07101e" opacity=".5"/>
+              <g id="astronaut-body">
+                <rect x="-24" y="-3" width="15" height="30" rx="5" fill="#7795ae"/>
+                <path d="M-11 20v15m21-15v15" stroke="#d3dee7" stroke-width="12" stroke-linecap="round"/>
+                <rect x="-18" y="-4" width="36" height="33" rx="12" fill="#e2e7e9"/>
+                <path d="m-17 4-9 17m43-17 7 17" stroke="#c6d7e1" stroke-width="10" stroke-linecap="round"/>
+                <rect x="-9" y="9" width="18" height="10" rx="3" fill="#427693"/><circle cx="4" cy="13" r="2" fill="#8ff4ed"/>
+                <circle cy="-15" r="24" fill="#e3ebed" stroke="#9ab6c7" stroke-width="2"/>
+                <rect x="-19" y="-29" width="38" height="28" rx="13" fill="url(#visor)"/>
+                <path d="M-12-23q5-5 12-4" fill="none" stroke="#c9f9ff" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+              </g>
+            </g>
+          </svg>
